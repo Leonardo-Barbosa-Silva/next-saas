@@ -2,10 +2,15 @@
     "name": "@saas/api",
     "version": "1.0.0",
     "scripts": {
-        "dev": "tsx src/index.ts"
+        "dev": "tsx watch src/index.ts"
     },
     "dependencies": {
-        "@saas/auth": "workspace:*"
+        "@fastify/cors": "^9.0.1",
+        "@saas/auth": "workspace:*",
+        "dotenv": "^16.4.5",
+        "fastify": "^4.27.0",
+        "fastify-type-provider-zod": "^1.2.0",
+        "zod": "^3.23.8"
     },
     "devDependencies": {
         "@saas/esconfig": "workspace:*",
@@ -16,7 +21,7 @@
     },
     "eslintConfig": {
         "extends": [
-            "@saas/config/eslint-config/node.js"
+            "@saas/eslint-config/node.js"
         ]
     },
     "prettier": "@saas/prettier"
