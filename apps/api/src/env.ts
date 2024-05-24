@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 import z from 'zod'
 
-dotenv.config({ path: '.env.local' })
+dotenv.config({ path: '.env' })
 
 const envSchema = z.object({
   SERVER_PORT: z.string(),
